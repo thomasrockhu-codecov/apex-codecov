@@ -1,14 +1,5 @@
 name: Continuous Integration
-on:
-  pull_request:
-    branches: [main]
-    paths:
-      - "force-app/**"
-    types:
-      - opened
-      - reopened
-      - synchronize
-      - ready_for_review
+on: [pull_request, push]
 
 jobs:
   validate-package:
